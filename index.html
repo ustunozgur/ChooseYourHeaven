@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
+
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = document.getElementById("myModal");
+
+            myModal.addEventListener("show.bs.modal", function (event) {
+                // Get the button that triggered the modal
+                var button = event.relatedTarget;
+
+                // Extract value from the custom data-* attribute
+                var titleData = button.getAttribute("data-title");
+                var contentData = button.getAttribute("data-content");
+
+                // Change modal title
+                myModal.querySelector(".modal-title").innerText = titleData;
+                myModal.querySelector(".modal-body").innerHTML = contentData;
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal2 = document.getElementById("myModal2");
+
+            myModal2.addEventListener("show.bs.modal", function (event) {
+                // Get the button that triggered the modal
+                var button = event.relatedTarget;
+
+                // Extract value from the custom data-* attribute
+                var titleData = button.getAttribute("data-title");
+                var contentData = button.getAttribute("data-content");
+
+                // Change modal title
+                myModal2.querySelector(".modal-title").innerText = titleData;
+                myModal2.querySelector(".modal-body").innerHTML = contentData;
+            });
+        });        
+    </script>
+    <title>Choose Your Heaven -- Homepage</title>
+</head>
+
+<body>
+
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Window</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-success">Buy It</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Window</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="color:#097cda" href="#!"><img src="assets/logo0004.png" height="50"> Choose
+                Your Heaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal2"
+                        data-title="About"
+                        data-content="<strong>Choose Your Heaven </strong> has been established in 2023 with the aim of providing the best service and price to its customers. We provide package tour and hotel accommodation services in and out of the country as the innovative representative of the tourism sector. 
+                        <br> The brand has grown rapidly since its establishment and stands out with its visionary structure in the travel sector and breaking new ground. 
+                        The company, which produces hundreds of tour packages covering 30 destinations in Turkey and 20 destinations abroad, also has 
+                        many brands as partners.</br><p><center>Our Partners:</center>
+                            <a target='blank' href='https://www.turkishairlines.com'><img src='assets/thy.png' width='150'></a>
+                            <a target='blank' href='https://www.flypgs.com/en'><img src='assets/pgs.png' width='150'></a>
+                            <a target='blank' href='https://www.metroturizm.com.tr/en/'><img src='assets/kk.png' width='150'></a>">
+                                About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Holidays</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item bg-gradient bg-warning" href="#!">Summer Holidays</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#R-Antalya">Antalya </a></li>
+                            <li><a class="dropdown-item" href="#R-Bodrum">Bodrum </a></li>
+                            <li><a class="dropdown-item" href="#R-Fethiye">Fethiye </a></li>
+                            <li><a class="dropdown-item" href="#R-Maldives">Maldives </a></li>
+                            <li><a class="dropdown-item" href="#R-BoraBora">Bora Bora </a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item bg-gradient bg-warning" href="#!">Winter Holidays</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#R-Uludag">Uludag</a></li>
+                            <li><a class="dropdown-item" href="#R-Palandoken">Palandoken</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item bg-gradient bg-warning" href="#!">Health Holidays</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#R-Hair">Hair Transplantation</a></li>
+                            <li><a class="dropdown-item" href="#R-Dental">Dental Care</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <i class="bi-cart-fill me-1"></i>
+                                Cart
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button>
+                        </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-info bg-gradient py-1">
+        <div class="container px-4 px-lg-5 my-1">
+            <div class="text-center text-white">
+                <!-- <h1 class="display-4 fw-bolder">Shop in style</h1> -->
+                <!-- <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>-->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="text-align: center;">
+                            <center><img src="assets/antalya011.jpg" class="d-block" style="width: 75;" alt="Antalya">
+                            </center>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Summer Holidays</h5>
+                                <p>Enjoy with Sun, Sand and Crystal Sea</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <center><img src="assets/bursa011.jpg" class="d-block" style="width: 75;" alt="Uludag">
+                            </center>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white">Winter Holidays</h5>
+                                <p>The Best Skiing Experiences</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <center><img src="assets/hair021.jpg" class="d-block" style="width: 75;"
+                                    alt="Hair Transplantation"></center>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Health Tourism</h5>
+                                <p>Bring Your Health Together with Vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div id="R-Antalya" class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Antalya</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/antalyaX1.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Phaselis Resort Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from £629 pp <br> (All Inclusive) </br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                    data-bs-toggle="modal" data-bs-target="#myModal"
+                                    data-title="Phaselis Resort Hotel -- Overview"
+                                    data-content="4-star<br>All Inclusive<br>Private Beaches<br>Spa & Massage<br>Fitness Center<br>Extra 10% Honeymoon Discount">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Antalya</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Deal</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/antalyaX2.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Perge Resort Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from <span class="text-muted text-decoration-line-through">£550</span> £496 pp <br>(All
+                                Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                    data-bs-toggle="modal" data-bs-target="#myModal"
+                                    data-title="Perge Resort Hotel  -- Overview"
+                                    data-content="4-star<br>All Inclusive<br>Aqua Park<br>6 Outdoor Pools<br>Evening Entertainment Programme<br>Tennis Court<br>Nurse<br>Extra 12% Honeymoon Discount">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Antalya</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Deal</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/antalyaX3.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Lycia Luxury Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from <span class="text-muted text-decoration-line-through">£1050</span> £929 pp <br>(All
+                                Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                    data-bs-toggle="modal" data-bs-target="#myModal"
+                                    data-title="Lycia Luxury Hotel -- Overview"
+                                    data-content="5-star<br>All Inclusive<br>Airport Meet and Greet<br>Private Beaches<br>Indoor Pool<br>Kids' Pool<br>Spa & Massage<br>Tennis Court<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Antalya</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/antalyaX4.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Patara Resort Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from £882 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Patara Resort Hotel -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Private Beaches<br>4 Outdoor Pools<br>Evening Entertainment Programme<br>Fitness Center<br>Extra 20% Discount for Bank D Customers">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Bodrum" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Bodrum</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Deal</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/bodrumX1.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Halicarnassus Beach Resort</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from <span class="text-muted text-decoration-line-through">£754</span> £694 pp <br>(All
+                                Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Halicarnassus Beach Resort -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Kids’ pool<br>Heated Outdoor Pool (during seasonal change, April-May & September-October)<br>Extra 30% Honeymoon Discount">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Bodrum</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/bodrumX2.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Turquoise Aquapark Hotel Spa </h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from £1243 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Turquoise Aquapark Hotel Spa -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Private Beaches<br>Kids' Pool<br>Tennis Court<br>Spa & Massage<br>Scuba Diving<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Fethiye" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Fethiye</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Popular Choice</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/bodrumX3.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Oludeniz Thermal Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from £659 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Oludeniz Thermal Hotel -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Private Beaches<br>2 Outdoor Pools<br>Pool Bar<br>Spa & Massage<br>Extra 5% Honeymoon Discount">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Fethiye</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/bodrumX4.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Butterfly Valley Premium Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                from £1024 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Butterfly Valley Premium Hotel -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Fitness Center<br>Heated Outdoor Pool (during seasonal change, April-May & September-October)<br>Spa & Massage<br>Turkish Bath<br>Japanese Restaurant<br>Evening Entertainment Programme<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Maldives" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Maldives</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Deal</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/maldiv01.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sun Island Hakuraa Huraa</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">£2117</span>
+                                £1724 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Sun Island Hakuraa Huraa -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Private Beaches<br>Scuba Diving<br>Infinity Pool<br>Japanese Restaurant<br>Extra 25% Honeymoon Discount">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Maldives</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/maldiv02.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Lux Cheval Blanc<br>Beach Boutique</br></h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £2482 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Lux Cheval Blanc Beach Boutique -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Private Beaches<br>Pool Bar<br>Spa & Massage<br>Fitness Center<br>Thai Restaurant<br>Water-bungalow Terraces<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-BoraBora" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Bora Bora</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/bora bora01.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Pearl Beach Premium Resort</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £2265 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Pearl Beach Premium Resort -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Airport Meet and Greet<br>Private Beaches<br>Scuba Diving<br>Spa & Massage<br>Infinity Pool<br>Water-bungalow Terraces<br>Extra 10% Discount for Bank A Customers">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Bora Bora</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Lowest Price</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/borabora02.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Pelican Bay Paradise</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £1453 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Pelican Bay Paradise -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Private Beaches<br>Spa & Massage<br>Pool Bar<br>Thai Restaurant<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Uludag" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Uludag</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/uludag01.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Lux Beceren 21 Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £1361 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Lux Beceren 21 Hotel -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Sauna<br>Heated Indoor Pool<br><Sauna>Hot Tub<br>Turkish Bath<br>Snowboard Lesson<br>Fitness Center<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Uludag</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Popular Choice</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/uludag02.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Grand Hotel My Mountain</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £893 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Grand Hotel My Mountain -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Table Tennis<br>Spa & Massage<br>Turkish Bath<br>Extra 10% Discount for Bank E Customers">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Palandoken" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Palandoken</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Lowest Price</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/Palandoken01.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Polatoglu Deluxe Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐️⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £1071 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Polatoglu Deluxe Hotel -- Overview"
+                                data-content="5-star<br>All Inclusive<br>Snowboard Lesson<br>Fitness Center<br>Spa & Massage<br>Hot Tub<br>Sauna<br>Table Tennis<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Palandoken</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/Palandoken02.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Hurrem Ski Resort Hotel</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill">⭐⭐⭐⭐</div>
+                                </div>
+                                <!-- Product price-->
+                                £769 pp <br>(All Inclusive)</br>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Hurrem Ski Resort Hotel -- Overview"
+                                data-content="4-star<br>All Inclusive<br>Limitless Ski-Pass<br>Spa & Massage<br>Fitness Center<br>Doctor<br>Nurse">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Hair" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Istanbul</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/hairtp01.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Istanbul Hair Academy</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                from £2879
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Istanbul Hair Academy -- Overview"
+                                data-content="5-star Hotel Accomodation in the City Centre<br>Airport Meet & Greet<br>Free Istanbul Museum Pass<br>Free Local Tours<br>">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Izmir</div>
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Deal</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/hairtp02.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Izmir MedHair Center</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                from <span class="text-muted text-decoration-line-through">£2494</span>
+                                £2053
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Izmir MedHair Center -- Overview"
+                                data-content="4 or 5-star Hotel Accomodation Options<br>Airport Meet and Greet<br>Free Museum Pass The Aegean<br>Free Local Tours">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="R-Dental" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Istanbul</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/dental01.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Bayrampasa Atac DentCenter</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                70% Discount for Holidays of 5-day
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Bayrampasa Atac DentCenter -- Overview"
+                                data-content="4 or 5-star Hotel Accomodation Options<br>Airport Meet and Greet<br>Free Turkish Bath Experience<br>Free Museum Pass Istanbul<br>Free Local Tours">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-warning text-white position-absolute" style="top: 0.5rem; left: 0.5rem">
+                            Ankara</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/dental02.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ankara Dental Center</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                Standard Package included for Holidays of 7-day
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                                data-bs-toggle="modal" data-bs-target="#myModal"
+                                data-title="Ankara Dental Center -- Overview"
+                                data-content="5-star Hotel Accomodation<br>Airport Meet and Greet<br>Free Museum Pass Cappadocia">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-info">
+            <div class="position-absolute" style="padding-left: 100px;" >
+                <button class="btn btn-danger" type="button">
+                    <i class="fa-brands fa-youtube"></i>
+                  </button>
+                  <button class="btn btn-info" type="button">
+                    <i class="fa-brands fa-twitter text-white"></i>
+                  </button>
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa-brands fa-facebook"></i>
+                  </button>
+                  <button class="btn btn-danger" type="button">
+                    <i class="fa-brands fa-instagram"></i>
+                  </button>
+                  <button class="btn btn-success" type="button">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </button>
+                <div class="m-0 text-center text-white">&copy; Copyright 2023 | Choose Your Heaven</div></div>
+            <div style="text-align: right; padding-right: 100px;" ><img width="300" src="assets/payments.jpg" alt=""></div>
+        </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            
+            let mybutton = document.getElementById("myBtn");
+          
+            
+            window.onscroll = function() {scrollFunction()};
+          
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+          
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+          </script>
+
+</body>
+
+</html>
